@@ -21,6 +21,7 @@ replace_all                 - Replace all provided values with replacement value
 is_defined                  - Check if a variable is defined by it's string name [e.g. `is_defined('varname')`]
 get_type                    - Return the object type (as a string) [e.g. `get_type(['A','B'])` => "`list`"]
 is_type                     - Check if a value is of given type [e.g. `is_type('str', 'float')` => `true`]
+is_numeric                  - Check if a variable has a numeric value [e.g. `is_numeric('2.5')` => `true`]
 inflate                     - Compress with zlib
 deflate                     - Decompress with zlib
 decode_base64_and_inflate   - Decode base64 content and decompress it
@@ -35,6 +36,9 @@ reach                       - Get a dict item by full path of key(s), with optio
 ternary                     - Returns one value if true, another if false, and third if null [e.g. `ternary(("a" == "b"), "Y", "N", "U")` => "`N`"]
 shuffle                     - Randomize an existing list, giving a different order every invocation [e.g. `shuffle([1,2,3])` => `[2,1,3]`]
 to_ascii_json               - Convert string to ASCII JSON
+sortnat                     - Identifies numbers anywhere in a string and sorts them naturally [e.g. `sortnat(['1.2', 2, '4%'])` => `['1.2', 2, '4%']`]
+contains_all                - Check if value contains all of the provided sub-values [e.g. `contains_all('a b c', ['a','d'])` => `false`]
+contains_any                - Check if value contains any of the provided sub-values [e.g. `contains_any('a b c', ['a','c'])` => `true`]
 ```
 
 </p>
